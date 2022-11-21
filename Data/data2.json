@@ -1,0 +1,14 @@
+[
+    {
+        "object":"circle",
+        "metric":"area"
+    },
+    {
+        "object":"sphere",
+        "metric":"area"
+    },
+    {
+        "object":"sphere",
+        "metric":"volume"
+    }
+]
