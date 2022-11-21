@@ -23,7 +23,7 @@ const server = http.createServer((req, res) => {
             let d = new Date()
             console.log("present date is :", d)
             let presentYear = d.getFullYear()
-            let presentMonth = d.getMonth()
+            let presentMonth = d.getMonth() + 1
             let presentDate = d.getDay()
 
             let age = presentYear - qdataYear
