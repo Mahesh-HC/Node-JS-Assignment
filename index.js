@@ -13,6 +13,8 @@ const server = http.createServer((req, res) => {
     const qdataMetric = parsedURL.query.metric
     const qdataRadius = parsedURL.query.radius
 
+    // problem 1
+    
     console.log(`Username ${qdataName}, and the Entered date is(YY-DD-MM) : ${qdataYear} - ${qdataMonth} - ${qdataDate}`)
     if (parsedURL.pathname === "/age") {
         if (qdataName != null && qdataYear != null && qdataMonth != null && qdataDate != null) {
@@ -39,7 +41,7 @@ const server = http.createServer((req, res) => {
         }
     }
 
-    // problem2
+    // problem 2
 
     if (req.url === "/vegetables") {
         const data = fs.readFileSync("./Data/data1.json", "utf-8")
@@ -48,7 +50,7 @@ const server = http.createServer((req, res) => {
         res.end(data)
     }
 
-    // problem3
+    // problem 3
 
     if (parsedURL.pathname === "/metrics") {
 
